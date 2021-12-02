@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" rel="stylesheet">
+    <link href="./demo.css" rel="stylesheet">
+    <link href="./theme1.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Calendar</title>
 </head>
@@ -9,6 +11,29 @@
 <h1>StudySesh</h1>
 <h2><a href="./index.html">Back</a></h2>
 <h2>Calendar:</h2>
-
+<div id="caleandar" style="background-color: whitesmoke">
+</div>
+<p style="color: whitesmoke">This is only a demo calendar. You can add an event but you cannot currently delete or edit
+    them.</p>
+<div style="color:whitesmoke">
+    <div style="display: table">
+        <div style="display: table-cell"><label for="year">Year:</label><input id="year" max="2050" min="2021"
+                                                                               placeholder="year" type="number"/></div>
+        <div style="display: table-cell"><label for="month">Month:</label><input id="month" max="12" min="1"
+                                                                                 placeholder="month" type="number"/>
+        </div>
+        <div style="display: table-cell"><label for="day">Day:</label><input id="day" max="31" min="1" placeholder="day"
+                                                                             type="number"/></div>
+    </div>
+    <div style="display: table">
+        <div style="display: table-cell"><label for="title">Title:</label><input id="title" placeholder="title"
+                                                                                 type="text"/></div>
+        <div style="display: table-cell"><label for="link">Link</label><input id="link" placeholder="link" type="text"/>
+        </div>
+    </div>
+    <button id="submitBtn">Submit</button>
+</div>
+<script src="./caleandar.js"></script>
+<script src="./demo.js" type="application/javascript"></script>
 </body>
 </html>
